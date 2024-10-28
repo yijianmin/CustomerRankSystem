@@ -21,7 +21,7 @@ namespace CustomerRankSystem
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddMemoryCache();
-            builder.Services.Configure<ApiBehaviorOptions>(options => { options.SuppressModelStateInvalidFilter = true; });//关闭ApiControllder特性自带的模型验证 https://www.sohu.com/a/574869766_121124365
+            builder.Services.Configure<ApiBehaviorOptions>(options => { options.SuppressModelStateInvalidFilter = true; }); 
 
             builder.Services.AddScoped<CustomerService>();
 
