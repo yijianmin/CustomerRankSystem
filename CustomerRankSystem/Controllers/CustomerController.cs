@@ -45,7 +45,7 @@ namespace CustomerRankSystem.Controllers
         public OutputResult InitData()
         {
             _customerService.InitData();
-            return new OutputResult(EnumResultCode.Ok, "Init succeed.");
+            return new OutputResult(EnumResultCode.Ok, "Init succeed."); 
         }
     }
 }
